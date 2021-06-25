@@ -63,3 +63,9 @@ $router->get('/v1/turismos', 'GastronomiaController@getTurismos');
 $router->get('/v1/agroindustrias', 'GastronomiaController@getAgroindustrias');
 $router->get('/v1/habitaciones', 'GastronomiaController@getHabitaciones');
 $router->get('/v1/restaurantes', 'GastronomiaController@getRestaurantes');
+// topbars
+$router->get('/v1/topbars', 'TopbarController@index');
+$router->get('/v1/topbars/actives', 'TopbarController@active');
+$router->put('/v1/topbars/{id}', 'TopbarController@index');
+// modalbienvenida
+$router->get('/v1/notificationmodal/actives', 'ModalNotificationController@actives');
